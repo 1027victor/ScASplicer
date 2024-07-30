@@ -70,7 +70,7 @@ shinyServer(function(input, output,session) {
       updateNavbarPage(session, "navBar", selected = currentHash)
     }
     switch(currentHash,
-           "event" = {
+           "events" = {
              overview_mainServer("event")
            },
            "ma" = {
