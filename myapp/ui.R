@@ -21,12 +21,13 @@ for (i in module_file_lst) {
 shinyUI(fluidPage(
   theme = bs_theme(bootswatch = "minty"),
   tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "https://use.fontawesome.com/releases/v5.15.1/css/all.css")
+    tags$link(rel = "stylesheet", type = "text/css", href = "https://use.fontawesome.com/releases/v5.15.1/css/all.css"),
+    tags$link(rel = "icon", type="image/png", href = "favicon.png")
   ),
   # theme = shinytheme("flatly"),
                   
-                  titlePanel("Downstream analysis: Alternative splicing"),
-                  navbarPage("Let's get started",
+                  # titlePanel("SpliceShiner"),
+                  navbarPage(span("SpliceShiner",style="font-weight:bold;font-size:24px;color:#303133;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"),
                              id = "navBar",
                              tabPanel("Home",value="home",icon=icon("home"),
                                       shinyjs::useShinyjs(),
@@ -128,7 +129,7 @@ shinyUI(fluidPage(
         <div><span>Yongchun Zuo: </span><span>yczuo@imu.edu.cn</span></div>
         <div><span>Yongqiang Xing:</span><span>xingyongqiang1984@163.com</span></div>
         <div><span>Pengwei Hu: </span><span>bio_victor@163.com</span></div>
-        <div><span>Address: </span><span>Zuo Lab, College of life sciences, Inner Mongolia University, Hohhot, 010021, China</span></div>
+        <div><span>Address: </span><a href="http://bioinfor.imu.edu.cn/" target="_blank"><span>Zuo Lab, College of life sciences, Inner Mongolia University, Hohhot, 010021, China</span></a></div>
       ')
                                           )
                                         ),
