@@ -72,8 +72,6 @@ BiocManager::install("org.Hs.eg.db")
 BiocManager::install("org.Mm.eg.db")
 BiocManager::install("phastCons100way.UCSC.hg38")
 
-
-
 ```
 
 Once you have completed the installation of the dependencies, start downloading and installing the ScSpliceShiner.
