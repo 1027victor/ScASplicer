@@ -15,7 +15,7 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ### Differential analysis
 
-![](/inst/app/www/Differential analysis.jpe)
+![](/inst/app/www/Differential analysis.jpeg)
 
 ### Gene ontology analysis
 
