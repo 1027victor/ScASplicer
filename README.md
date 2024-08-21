@@ -8,6 +8,7 @@ If you use `ScSpliceShiner`, please remember to cite its orignal paper:
 
 Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analysis platform for single-cell RNA sequencing data[J]. Nucleic Acids Research, 2023, 51(5): e29-e29.
 
+## Features
 
 ### Overview of splicing events
 
