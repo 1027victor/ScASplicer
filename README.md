@@ -31,15 +31,6 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ![](/inst/app/www/Dynamics_analysis.jpeg)
 
-
-### Usage Demo
-- Overview of splicing events
-- Modality analysis
-- Differential analysis
-- Gene ontology analysis
-- Dynamics analysis
-
-
 ## Installation
 ### Install ScSpliceShiner in Rstudio
 Before installing this App, you will need to install some **dependent R packages** on your R.
@@ -89,7 +80,6 @@ BiocManager::install("IRanges")
 BiocManager::install("org.Hs.eg.db")
 BiocManager::install("org.Mm.eg.db")
 BiocManager::install("phastCons100way.UCSC.hg38")
-
 ```
 
 Once you have completed the installation of the dependencies, start downloading and installing the ScSpliceShiner.
