@@ -11,20 +11,20 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ### Overview of splicing events
 
-![Description](/inst/app/www/overview of splicing events.jpeg)
+![](/inst/app/www/overview_of_splicing_events.jpeg)
 
 ### Differential analysis
 
-![](/inst/app/www/Differential analysis.jpeg)
+![](/inst/app/www/Differential_analysis.jpeg)
 
 ### Gene ontology analysis
 
-![](/inst/app/www/Gene ontology analysis.jpeg)
+![](/inst/app/www/Gene_ontology_analysis.jpeg)
 
 
 ### Dynamics analysis
 
-![](/inst/app/www/Dynamics analysis.jpeg)
+![](/inst/app/www/Dynamics_analysis.jpeg)
 
 
 ### Usage Demo
