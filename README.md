@@ -2,7 +2,7 @@
 [![source](https://img.shields.io/badge/Source_code-support-blue.svg)](https://github.com//1027victor/ScSpliceShiner/tree/main/R)
 ## Introduction
 ## What is ScSpliceShiner
-`SpliceShiner` is a shiny application based on the R package MARVEL, which aims to make single-cell alternative splicing analysis and gene expression analysis accessible to users through an interactive interface.
+`SpliceShiner` is a shiny application based on the R package MARVEL, which aims to make single-cell alternative splicing analysis and gene expression analysis accessible to users through an interactive interface( main support Single-cell-RNA-sequencing data generated from plate-based library preparation methods such as Smart-seq2).
 
 If you use `ScSpliceShiner`, please remember to cite its orignal paper:
 
