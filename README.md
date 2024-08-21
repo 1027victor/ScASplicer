@@ -15,7 +15,7 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ### Modality analysis
 
-[](/inst/app/www/Modality_analysis.jpeg)
+![](/inst/app/www/Modality_analysis.jpeg)
 
 ### Differential analysis
 
