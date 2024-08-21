@@ -11,7 +11,7 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ### Overview of splicing events
 
-![](/inst/app/www/overview of splicing events.jpeg)
+![Description](/inst/app/www/overview of splicing events.jpeg)
 
 ### Differential analysis
 
