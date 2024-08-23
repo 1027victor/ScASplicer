@@ -1,6 +1,7 @@
 # ScSpliceShiner
 [![source](https://img.shields.io/badge/Source_code-support-blue.svg)](https://github.com//1027victor/ScSpliceShiner/tree/main/R)
-![Version](https://img.shields.io/github/v/release/username/repo.svg)
+![Version](https://img.shields.io/github/v/release/username/repo.svg?label=version&color=blue)
+
 
 ## Introduction
 ## What is ScSpliceShiner
