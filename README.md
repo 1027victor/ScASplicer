@@ -1,9 +1,8 @@
 # ScSpliceShiner
 [![source](https://img.shields.io/badge/Source_code-support-blue.svg)](https://github.com//1027victor/ScSpliceShiner/tree/main/R)
-![Version](https://img.shields.io/github/v/release/1027victor/ScSpliceShiner.svg)
+![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)
 ![License](https://img.shields.io/github/license/1027victor/ScSpliceShiner.svg)
 ![Languages](https://img.shields.io/github/languages/top/1027victor/ScSpliceShiner.svg)
-![Downloads](https://img.shields.io/github/downloads/1027victor/ScSpliceShiner/total.svg)
 ![Stars](https://img.shields.io/github/stars/1027victor/ScSpliceShiner.svg)
 ![Forks](https://img.shields.io/github/forks/1027victor/ScSpliceShiner.svg)
 ![Contributors](https://img.shields.io/github/contributors/1027victor/ScSpliceShiner.svg)
