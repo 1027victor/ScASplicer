@@ -1,4 +1,4 @@
-# ScSpliceShiner
+# ScASplicer
 [![source](https://img.shields.io/badge/Source_code-support-blue.svg)](https://github.com//1027victor/ScSpliceShiner/tree/main/R)
 ![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)
 ![License](https://img.shields.io/github/license/1027victor/ScSpliceShiner.svg)
@@ -8,10 +8,10 @@
 ![Contributors](https://img.shields.io/github/contributors/1027victor/ScSpliceShiner.svg)
 
 ## Introduction
-## What is ScSpliceShiner
-`SpliceShiner` is a shiny application based on the R package MARVEL, which aims to make single-cell alternative splicing analysis and gene expression analysis accessible to users through an interactive interface( main support Single-cell-RNA-sequencing data generated from plate-based library preparation methods such as Smart-seq2).
+## What is ScASplicer
+`ScASplicer` is a  R package that extends MARVEL's capabilities to support multiple cell populations, offering an interactive, code-free platform for splicing and gene expression analysis. These advancements significantly improve MARVEL’s usability and functionality, enabling broader and more complex single-cell AS studies( main support Single-cell-RNA-sequencing data generated from plate-based library preparation methods such as Smart-seq2).
 
-If you use `ScSpliceShiner`, please remember to cite its orignal paper:
+If you use `ScASplicer`, please remember to cite its orignal paper:
 
 Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analysis platform for single-cell RNA sequencing data[J]. Nucleic Acids Research, 2023, 51(5): e29-e29.
 
