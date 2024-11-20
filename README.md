@@ -41,7 +41,7 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 ![](/inst/app/www/Dynamics_analysis.jpeg)
 
 ## Installation
-### Install ScSpliceShiner in Rstudio
+### Install ScASplicer in Rstudio
 Before installing this App, you will need to install some **dependent R packages** on your R.
 
 ```
@@ -93,9 +93,9 @@ BiocManager::install("phastCons100way.UCSC.hg38")
 
 Once you have completed the installation of the dependencies, start downloading and installing the ScSpliceShiner.
 ```{r}
-devtools::install_github("1027victor/ScSpliceShiner")
+devtools::install_github("1027victor/ScASplicer")
 ```
-Once the installation is complete, run `ScSpliceShiner::run_app()` to open the APP page.
+Once the installation is complete, run `ScASplicer::run_app()` to open the APP page.
 
 
 
