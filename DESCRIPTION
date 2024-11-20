@@ -1,5 +1,5 @@
 Package: ScASplicer
-Title: An Amazing Shiny App
+Title:  An interactive, code-free platform for alternative splicing and gene expression analysis.
 Version: 1.1.0
 Authors@R: 
     person("PengWei", "Hu", , "bio_victor@163.com", role = c("aut", "cre"))
