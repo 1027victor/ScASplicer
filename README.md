@@ -11,6 +11,8 @@
 ## What is ScASplicer
 `ScASplicer` is a  R package that extends MARVEL's capabilities to support multiple cell populations, offering an interactive, code-free platform for alternative splicing and gene expression analysis. These advancements significantly improve MARVEL’s usability and functionality, enabling broader and more complex single-cell AS studies( main support Single-cell-RNA-sequencing data generated from plate-based library preparation methods such as Smart-seq2).
 
+![](/inst/app/www/pipeline.tif)
+
 If you use `ScASplicer`, please remember to cite its orignal paper:
 
 Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analysis platform for single-cell RNA sequencing data[J]. Nucleic Acids Research, 2023, 51(5): e29-e29.
