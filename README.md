@@ -91,7 +91,7 @@ BiocManager::install("org.Mm.eg.db")
 BiocManager::install("phastCons100way.UCSC.hg38")
 ```
 
-Once you have completed the installation of the dependencies, start downloading and installing the ScSpliceShiner.
+Once you have completed the installation of the dependencies, start downloading and installing the ScASplicer.
 ```{r}
 devtools::install_github("1027victor/ScASplicer")
 ```
