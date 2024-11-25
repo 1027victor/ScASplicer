@@ -9,7 +9,7 @@
 #'
 #' @noRd
 app_sys <- function(...) {
-  system.file(..., package = "ScSpliceShiner")
+  system.file(..., package = "ScASplicer")
 }
 
 
