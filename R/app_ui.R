@@ -28,7 +28,7 @@ app_ui <- function(request) {
   # theme = shinytheme("flatly"),
   
   # titlePanel("SpliceShiner"),
-  navbarPage(span("ScSpliceShiner",style="font-weight:bold;font-size:24px;color:#303133;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"),
+  navbarPage(span("ScASplicer",style="font-weight:bold;font-size:24px;color:#303133;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"),
              id = "navBar",
              tabPanel("Home",value="home",icon=icon("home"),
                       shinyjs::useShinyjs(),
@@ -222,7 +222,7 @@ golem_add_external_resources <- function() {
     favicon(),
     bundle_resources(
       path = app_sys("app/www"),
-      app_title = "ScSpliceShiner"
+      app_title = "ScASplicer"
     ),
     
     tags$link(rel = "stylesheet", type = "text/css", href = "https://use.fontawesome.com/releases/v5.15.1/css/all.css"),
