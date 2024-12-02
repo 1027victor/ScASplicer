@@ -47,38 +47,102 @@ my_bar<-function(data,
   hc_add_theme(hc_theme_smpl())
   return(barplot)
 }
-my_Bubble_plot<-function(data,
-                        width = 850,
-                        height = 600,
-                        go_term = 10,
-                        sourceWidth = 850,
-                        sourceHeight = 600,
-                        color_min = "#FFF6A5", 
-                        color_max = "#c1021f",
-                        fontSize = "12px",
-                        minsize = 10,
-                        maxsize = 30)
-                        {
-  color_min <- color_min 
-  color_max <- color_max 
-  data=data[1:go_term,]
-  data$color <- scales::col_numeric(palette = c(color_min, color_max),
-                                       domain = range(data$neg_log10pvalue))(data$neg_log10pvalue)
-  data$category_index <- 0:(length(data$Description)-1)
-  bubble_chart<-highchart() %>%
-    hc_chart(width = width,height=height) %>% 
+# my_Bubble_plot<-function(data,
+#                         width = 850,
+#                         height = 600,
+#                         go_term = 10,
+#                         sourceWidth = 850,
+#                         sourceHeight = 600,
+#                         color_min = "#FFF6A5", 
+#                         color_max = "#c1021f",
+#                         fontSize = "12px",
+#                         minsize = 10,
+#                         maxsize = 30)
+#                         {
+#   color_min <- color_min 
+#   color_max <- color_max 
+#   data=data[1:go_term,]
+#   data$color <- scales::col_numeric(palette = c(color_min, color_max),
+#                                        domain = range(data$neg_log10pvalue))(data$neg_log10pvalue)
+#   data$category_index <- 0:(length(data$Description)-1)
+#   bubble_chart<-highchart() %>%
+#     hc_chart(width = width,height=height) %>% 
+#     hc_chart(type = 'bubble') %>%
+#     hc_title(text = " ") %>%
+#     hc_xAxis(title = list(text = "Gene Number",style = list(color = "black", fontSize = fontSize,fontWeight = "normal")),
+#              lineColor = "black",
+#              lineWidth = 1,
+#              # tickInterval = 5, 
+#              gridLineWidth = 1,
+#              labels = list(
+#                style = list(fontSize = fontSize, color = "black", fontWeight = "normal"))) %>%
+#     hc_yAxis(title = list(text = ""),
+#              categories = data$Description,
+#              min = 0,max=length(data$Description)-1,
+#              lineColor = "black",
+#              lineWidth = 1,
+#              gridLineWidth = 1,
+#              labels = list(
+#                style = list(fontSize = fontSize, color = "black", fontWeight = "normal"))) %>%
+#     hc_add_series(
+#       data = data,
+#       type = "bubble",
+#       hcaes(x = Count, y = category_index,z=sqrt(Count),color=color),
+#       showInLegend = TRUE,
+#       name='gene number'
+#     ) %>%
+#     # minSize = 10, maxSize = 30 set the size of the bubble
+#     hc_plotOptions(bubble = list(minSize = minsize, maxSize = maxsize, fillOpacity = 0.2)) %>%
+#     hc_colorAxis(stops = color_stops(length(data$neg_log10pvalue), c(color_min,color_max))) %>%
+#     hc_legend(title = list(text = "-log10(pvalue)",style = list(color = "black", fontSize = fontSize,fontWeight = "normal")), layout = "vertical", align = "right", verticalAlign = "middle") %>%
+#     hc_tooltip(pointFormat = "<b>{point.x}</b> genes") %>%
+#     hc_chart(events = list(load = JS("function() {
+#               var chart = this;
+#               chart.update({
+#                 chart: {
+#                   backgroundColor: '#FFFFFF' // set the background color of the chart
+#                 }
+#               });
+#               console.log('Updated chart background color!')
+#             }")))%>%
+#     hc_exporting(enabled = TRUE,sourceHeight=sourceHeight,sourceWidth=sourceWidth)
+#     return(bubble_chart)
+  
+# }
+
+my_Bubble_plot <- function(data,
+                           width = 850,
+                           height = 600,
+                           go_term = 10,
+                           sourceWidth = 850,
+                           sourceHeight = 600,
+                           color_min = "#FFF6A5",
+                           color_max = "#c1021f",
+                           fontSize = "12px",
+                           minsize = 10,
+                           maxsize = 30) {
+  color_min <- color_min
+  color_max <- color_max
+  data = data[1:go_term,]
+  # 计算GeneRatio
+  data$GeneRatio <- sapply(strsplit(as.character(data$GeneRatio), "/"), function(x) as.numeric(x[1]) / as.numeric(x[2]))
+  # 按GeneRatio排序
+  data = data %>% arrange(GeneRatio)
+  data$category_index <- 0:(length(data$Description) - 1)
+  
+  bubble_chart <- highchart() %>%
+    hc_chart(width = width, height = height) %>%
     hc_chart(type = 'bubble') %>%
     hc_title(text = " ") %>%
-    hc_xAxis(title = list(text = "Gene Number",style = list(color = "black", fontSize = fontSize,fontWeight = "normal")),
+    hc_xAxis(title = list(text = "GeneRatio", style = list(color = "black", fontSize = fontSize, fontWeight = "normal")),
              lineColor = "black",
              lineWidth = 1,
-             # tickInterval = 5, 
              gridLineWidth = 1,
              labels = list(
                style = list(fontSize = fontSize, color = "black", fontWeight = "normal"))) %>%
     hc_yAxis(title = list(text = ""),
              categories = data$Description,
-             min = 0,max=length(data$Description)-1,
+             min = 0, max = length(data$Description) - 1,
              lineColor = "black",
              lineWidth = 1,
              gridLineWidth = 1,
@@ -87,28 +151,45 @@ my_Bubble_plot<-function(data,
     hc_add_series(
       data = data,
       type = "bubble",
-      hcaes(x = Count, y = category_index,z=sqrt(Count),color=color),
+      hcaes(x = GeneRatio, y = category_index, z = Count),  # 移除了color的映射
       showInLegend = TRUE,
-      name='gene number'
+      name = 'Count',
+      colorKey = 'neg_log10pvalue',  # 指定颜色键
+      color = 'black'
     ) %>%
-    # minSize = 10, maxSize = 30 set the size of the bubble
-    hc_plotOptions(bubble = list(minSize = minsize, maxSize = maxsize, fillOpacity = 0.2)) %>%
-    hc_colorAxis(stops = color_stops(length(data$neg_log10pvalue), c(color_min,color_max))) %>%
+    hc_plotOptions(
+      bubble = list(minSize = minsize, maxSize = maxsize, fillOpacity = 0.6),  # 调整透明度以更清晰地显示颜色
+      series = list(
+        point = list(
+          events = list(
+            hide = JS("function () { this.series.chart.colorAxis[0].update({}, true); }"),
+            show = JS("function () { this.series.chart.colorAxis[0].update({}, true); }")
+          )
+        )
+      )
+    ) %>%
+    hc_colorAxis(
+      stops = color_stops(10, c(color_min, color_max)),
+      min = min(data$neg_log10pvalue, na.rm = TRUE),
+      max = max(data$neg_log10pvalue, na.rm = TRUE),
+      title = list(text = "-log10(pvalue)", style = list(color = "black", fontSize = fontSize, fontWeight = "normal"))
+    ) %>%
+    # hc_legend(layout = "vertical", align = "right", verticalAlign = "middle") %>%
     hc_legend(title = list(text = "-log10(pvalue)",style = list(color = "black", fontSize = fontSize,fontWeight = "normal")), layout = "vertical", align = "right", verticalAlign = "middle") %>%
-    hc_tooltip(pointFormat = "<b>{point.x}</b> genes") %>%
+    hc_tooltip(pointFormat = "<b>{point.z}</b> genes") %>%  # 在提示框中显示neg_log10pvalue
     hc_chart(events = list(load = JS("function() {
-              var chart = this;
-              chart.update({
-                chart: {
-                  backgroundColor: '#FFFFFF' // set the background color of the chart
-                }
-              });
-              console.log('Updated chart background color!')
-            }")))%>%
-    hc_exporting(enabled = TRUE,sourceHeight=sourceHeight,sourceWidth=sourceWidth)
-    return(bubble_chart)
-  
+                  var chart = this;
+                  chart.update({
+                    chart: {
+                      backgroundColor: '#FFFFFF' // 设置图表背景颜色
+                    }
+                  });
+                  console.log('Updated chart background color!')
+                }"))) %>%
+    hc_exporting(enabled = TRUE, sourceHeight = sourceHeight, sourceWidth = sourceWidth)
+  return(bubble_chart)
 }
+
 my_circle<-function(data,
                     go_term=10,
                     outcolor='#69c3c5',
