@@ -4,7 +4,7 @@ Version: 1.1.0
 Authors@R: 
     person("PengWei", "Hu", , "bio_victor@163.com", role = c("aut", "cre"))
 Description: A shiny app which can make your single-cell RNA-Seq
-    alternative splicing analysis easy.
+    alternative splicing analysis easily.
 License: What license is it under?
 Depends: 
     R (>= 4.3.1)
