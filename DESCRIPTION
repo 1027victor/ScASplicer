@@ -12,7 +12,7 @@ Imports:
     AnnotationDbi (>= 1.64.1),
     BSgenome (>= 1.70.1),
     BSgenome.Hsapiens.NCBI.GRCh38 (>= 1.3.1000),
-    Biostrings (>= 2.70.3),
+    Biostrings (>= 2.70.1),
     ComplexHeatmap (>= 2.18.0),
     DT,
     FactoMineR (>= 2.10),
