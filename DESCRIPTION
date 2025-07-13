@@ -28,6 +28,7 @@ Imports:
     ggnewscale (>= 0.5.0),
     ggplot2 (>= 3.5.1),
     ggrepel (>= 0.9.5),
+    golem (>= 0.4.1),
     graphics (>= 4.3.1),
     grid (>= 4.3.1),
     gridExtra (>= 2.3),
