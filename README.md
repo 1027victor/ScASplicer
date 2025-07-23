@@ -41,41 +41,10 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 ![](/inst/app/www/Dynamics_analysis.jpeg)
 
 ## Installation
-### Install ScASplicer in Rstudio
-Before installing this App, you will need to install some **dependent R packages** on your R.
-
-```
-install.packages("shiny")
-install.packages("ComplexHeatmap")
-install.packages("bslib")
-install.packages("circlize")
-install.packages("colourpicker") 
-install.packages("DT")
-install.packages("dplyr")
-install.packages("data.table")
-install.packages("shinyWidgets")
-install.packages("shinycssloaders")
-install.packages("shinyjs")
-install.packages("highcharter")
-install.packages("MARVEL")
-install.packages("ggplot2")
-install.packages("Matrix")
-install.packages("plyr")
-install.packages("scales")
-install.packages("factoextra")
-install.packages("FactoMineR")
-install.packages("fitdistrplus")
-install.packages("ggplot2")
-install.packages("ggrepel")
-install.packages("gtools")
-install.packages("kSamples")
-install.packages("pheatmap")
-install.packages("reshape2")
-install.packages("S4Vectors")
-install.packages("scales")
-install.packages("stringr")
-install.packages("textclean")
-install.packages("twosamples")
+1. Install the R [(LINK)](https://cran.r-project.org/)
+2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
+3. Run the following command in rStudio to install ScASplicer as an R package:
+```{r,eval=FALSE}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
@@ -88,17 +57,10 @@ BiocManager::install("GenomicRanges")
 BiocManager::install("IRanges")
 BiocManager::install("org.Hs.eg.db")
 BiocManager::install("org.Mm.eg.db")
-BiocManager::install("phastCons100way.UCSC.hg38")
-```
-
-Once you have completed the installation of the dependencies, start downloading and installing the ScASplicer.
-```{r}
+install.packages("MARVEL")
 devtools::install_github("1027victor/ScASplicer")
 ```
-Once the installation is complete, run `ScASplicer::run_app()` to open the APP page.
-
-
-
-
-
-
+Once the installation is complete, run the following command in rStudio to open the APP page.
+```
+ScASplicer::run_app()
+```
