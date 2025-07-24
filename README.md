@@ -94,11 +94,12 @@ Note:
 We have prepared docker images for `ScASplicer`. With docker installed, user could simplely invoke
 the app with command below, and will be able to invoke the application directly from 
 **"Containers/ Apps"** menu when opening Docker Desktop next time.
+
 Pull the pre-built image from [dockerhub](https://hub.docker.com/), use:
 ```
 docker pull biovictor520zy/scasplicer
 ```
-Users in the mainland of China could use the image below:
+Run ScASplicer Docker Container with Port Mapping
 ```
 docker run -itd --name scasplicer -p 10027:10027 biovictor520zy/scasplicer
 ```
