@@ -94,40 +94,21 @@ Note:
 We have prepared docker images for `ScASplicer`. With docker installed, user could simplely invoke
 the app with command below, and will be able to invoke the application directly from 
 **"Containers/ Apps"** menu when opening Docker Desktop next time.
-
+Pull the pre-built image from [dockerhub](https://hub.docker.com/), use:
 ```
-docker run -p 10027:10027 1027victor/ScASplicer
+docker pull biovictor520zy/scasplicer
 ```
-
-To remove container after usage, use command:
-
+Users in the mainland of China could use the image below:
 ```
-docker run --rm -p 10027:10027 1027victor/ScASplicer
+docker run -itd --name scasplicer -p 10027:10027 biovictor520zy/scasplicer
 ```
-
 The application will be run locally at `http://xxxx.xxxx.xxxx.xxxx:10027`, user could open
 the address with browsers.
 
 Note:
 + If you use windows system ,The application will be run locally at http://127.0.0.1:10027, user could open the address with google chrome or other modern browsers.
 + If you use  Linux server,The application will be run locally at http://xxx.xxxx.xxx.xxx:10027, xxx.xxx.xxx.xxx is the IP address of the server, user could open the address with google chrome or other modern browsers.
-
-To only pull the pre-built image from [dockerhub](https://hub.docker.com/), use:
-
-```
-docker pull biovictor520zy/scasplicer
-```
-
-Users in the mainland of China could use the image below:
-
-```
-docker run -itd --name scasplicer -p 10027:10027 biovictor520zy/scasplicer
-```
-
-Note: 
-
 - Windows users needs to install docker desktop, and type the same command
 above in any terminal app, e.g. `PowerShell`.
-
 - The image is a bit large, please reserve 5 GB space for it.  
 
