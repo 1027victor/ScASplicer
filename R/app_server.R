@@ -3,6 +3,11 @@
 #' @param input,output Internal parameters for {shiny}.
 #'     DO NOT REMOVE.
 #' @import MARVEL
+#' @import rtracklayer
+#' @import VariantAnnotation
+#' @import Rsamtools
+#' @import TxDb.Hsapiens.UCSC.hg38.knownGene
+#' @import TxDb.Mmusculus.UCSC.mm10.knownGene
 #' @import ggnewscale
 #' @import ggrepel
 #' @import parallel
@@ -46,6 +51,7 @@ app_server<-function(input, output,session) {
   diff_server <- Differential_mainServer("diff")
   go_server <- go_mainServer("go")
   modality_server <- dynamics_mainServer("modality")
+  vract_server<-trackviwer_mainServer("vrcat")
   
   observeEvent(session$clientData$url_hash, {
     currentHash <- sub("#", "", session$clientData$url_hash)
