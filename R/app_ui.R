@@ -204,7 +204,11 @@ app_ui <- function(request) {
              ),
              tabPanel("Dynamics analysis", value="da",icon=(tags$i(class = "fas fa-wave-square")),
                       
-                      dynamics_UI('modality'))
+                      dynamics_UI('modality')),
+                 
+                  tabPanel(" Visualization of annotation tracks", value="vrcat",icon = (tags$i(class = "fas fa-eye")) ,
+                           
+                           trackviwer_UI('vrcat'))
              
              
              
