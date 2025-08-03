@@ -45,6 +45,7 @@ source("R/utils.R")
 
 app_server<-function(input, output,session) {
   options(shiny.maxRequestSize=300*1024^3)
+  stopifnot(packageVersion("trackViewer")>="1.19.11")
   pipeline_server <- mod_MARVEL_pipeline_server("pipeline")
   event_server <- overview_mainServer("event")
   modal_server <- modal_mainServer("modal")
