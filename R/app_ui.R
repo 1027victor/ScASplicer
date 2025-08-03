@@ -8,6 +8,7 @@
 #' @import bslib
 #' @import shinyWidgets
 #' @import colourpicker
+#' @import trackViewer
 #' @noRd
 
 app_ui <- function(request) {
@@ -47,7 +48,7 @@ app_ui <- function(request) {
                       br(),
                       br(),
                       fluidRow(
-                        column(1),
+                        
                         column(2,
                                tags$a(style="text-decoration: none",
                                       tags$div(
@@ -108,7 +109,18 @@ app_ui <- function(request) {
                                       )
                                )
                         ),
-                        column(1)
+                                                                column(2,
+                                               tags$a(style="text-decoration: none",
+                                                      tags$div(
+                                                        style = "cursor: pointer;  text-align: center;", 
+                                                        onclick = "fakeClick('vrcat')",
+                                                        HTML('
+<svg t="1754079198693" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8045" width="100" height="100"><path d="M810.666667 128C857.6 128 896 166.4 896 213.333333L896 810.666667C896 858.026667 857.6 896 810.666667 896L213.333333 896C166.4 896 128 857.6 128 810.666667L128 213.333333C128 166.4 166.4 128 213.333333 128L810.666667 128M512 213.333333C346.88 213.333333 213.333333 346.88 213.333333 512 213.333333 677.12 346.88 810.666667 512 810.666667 677.12 810.666667 810.666667 677.12 810.666667 512 810.666667 346.88 677.12 213.333333 512 213.333333M298.666667 512 426.666667 384 426.666667 469.333333 597.333333 469.333333 597.333333 384 725.333333 512 597.333333 640 597.333333 554.666667 426.666667 554.666667 426.666667 640 298.666667 512Z" p-id="8046" fill="#1296db"></path></svg>
+<div style="font-weight:bold;font-size:16px;color:#303133;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"> Visualization of annotation tracks</div>
+        ')
+                                                      )
+                                               )
+                                        )
                       ),
                       br(),
                       br(),
@@ -233,7 +245,16 @@ golem_add_external_resources <- function() {
       tags$link(
         type = "text/css",
         rel = "stylesheet",
-        href = "www/style.css")
+        href = "www/style.css"),
+        tags$style(HTML("
+      /* 让 trackViewer 自己以及内部 SVG 都别裁剪超出部分 */
+      #trackViewer,
+      #trackViewer svg,
+      .html-widget-output,
+      .html-widget-output svg {
+        overflow: visible !important;
+      }
+    "))
     )
   )
 }
