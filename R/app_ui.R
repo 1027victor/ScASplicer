@@ -206,10 +206,10 @@ app_ui <- function(request) {
                       
                       dynamics_UI('modality')),
                  
-                  tabPanel(" Visualization of annotation tracks", value="vrcat",icon = (tags$i(class = "fas fa-eye")) ,
-                           
-                           trackviwer_UI('vrcat'))
-             
+            tabPanel(" Visualization of annotation tracks", value="vrcat",icon = (tags$i(class = "fas fa-eye")) ,
+                     
+                     trackviwer_UI('vrcat'))
+       
              
              
              
