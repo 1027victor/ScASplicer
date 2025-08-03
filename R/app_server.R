@@ -8,6 +8,7 @@
 #' @import Rsamtools
 #' @import TxDb.Hsapiens.UCSC.hg38.knownGene
 #' @import TxDb.Mmusculus.UCSC.mm10.knownGene
+#' @import GenomicRanges
 #' @import ggnewscale
 #' @import ggrepel
 #' @import parallel
