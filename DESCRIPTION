@@ -20,6 +20,7 @@ Imports:
     TxDb.Hsapiens.UCSC.hg38.knownGene (>= 3.18.0),
     TxDb.Mmusculus.UCSC.mm10.knownGene (>= 3.10.0),
     trackViewer (>= 1.38.1),
+    GenomicRanges (>=1.54.1),
     DT,
     FactoMineR (>= 2.10),
     MARVEL (>= 1.4.0),
