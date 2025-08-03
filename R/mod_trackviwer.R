@@ -1,3 +1,12 @@
+#' trackviwer UI Function
+#'
+#' @description A shiny Module.
+#'
+#' @param id,input,output,session Internal parameters for {shiny}.
+#'
+#' @noRd 
+#'
+#' @importFrom shiny NS tagList 
 trackviwer_UI<-function(id){
   ns<-NS(id)
   sidebarLayout(
