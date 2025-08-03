@@ -65,13 +65,13 @@ Differential_UI<-function(id){
         ),
         
         
-        tabPanel("Differential splice analysis",icon=icon("scissors", lib = "font-awesome"),
+        tabPanel("Differential splice events analysis",icon=icon("scissors", lib = "font-awesome"),
                  helpText("Show the results in this view.",style="font-weight:bold;font-size:24px;color:#303133 !important;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"), uiOutput(ns("DA_splice_conditional_scroll_box")),helpText("Show the output_data in this view.",style="font-weight:bold;font-size:24px;color:#303133 !important;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"),
                  uiOutput(ns("DA_splice_ex3")),
                  DT::dataTableOutput(ns('ex3'))
         ),
         
-        tabPanel("Differential (spliced) gene analysis", icon=icon("chart-line", lib = "font-awesome"),
+        tabPanel("Differential spliced gene analysis", icon=icon("chart-line", lib = "font-awesome"),
                  helpText("Show the results in this view.",style="font-weight:bold;font-size:24px;color:#303133 !important;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"), uiOutput(ns("DA_spliced_gene_conditional_scroll_box")),helpText("Show the output_data in this view.",style="font-weight:bold;font-size:24px;color:#303133 !important;font-family: OpenSans-Semibold, Helvetica Neue, Helvetica, Arial, sans-serif !important;"),
                  uiOutput(ns("DA_spliced_gene_ex4")),
                  DT::dataTableOutput(ns('ex4'))
