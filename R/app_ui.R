@@ -6,6 +6,7 @@
 #' Core Shiny functionality:
 #' @import shiny
 #' @import bslib
+#' @import GenomicRanges
 #' @import shinyWidgets
 #' @import colourpicker
 #' @import trackViewer
