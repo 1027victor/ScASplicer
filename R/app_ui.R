@@ -7,6 +7,7 @@
 #' @import shiny
 #' @import bslib
 #' @import GenomicRanges
+#' @import IRanges
 #' @import shinyWidgets
 #' @import colourpicker
 #' @import trackViewer
