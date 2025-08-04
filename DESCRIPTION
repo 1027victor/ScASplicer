@@ -21,7 +21,7 @@ Imports:
     TxDb.Mmusculus.UCSC.mm10.knownGene (>= 3.10.0),
     trackViewer (>= 1.38.1),
     GenomicRanges (>= 1.54.1),
-    IRanges (>= 2.36.0)
+    IRanges (>= 2.36.0),
     DT,
     FactoMineR (>= 2.10),
     MARVEL (>= 1.4.0),
