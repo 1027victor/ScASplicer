@@ -17,7 +17,7 @@ If you use `ScASplicer`, please remember to cite its orignal paper:
 
 Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analysis platform for single-cell RNA sequencing data[J]. Nucleic Acids Research, 2023, 51(5): e29-e29.
 
-## 📂 Example Data and Tutorial Videos
+## 📂 Test Data and Tutorial Videos
 
 To help users get started quickly, we provide one **example dataset** and two **instructional videos**. The example dataset can be used to test and reproduce the analysis workflow, while the videos demonstrate how to operate the tool step by step.
 
