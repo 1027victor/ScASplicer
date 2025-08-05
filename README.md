@@ -40,6 +40,9 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ![](/inst/app/www/Dynamics_analysis.jpg)
 
+### Visualization of annotation tracks
+![](/inst/app/www/visualization_of_annotation_tracks.jpeg)
+
 ## Installation
 1. Install the R [(LINK)](https://cran.r-project.org/)
 2. Install the free version of rStudio [(LINK)](https://www.rstudio.com/products/rstudio/download/)
