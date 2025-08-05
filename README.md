@@ -50,7 +50,6 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 ```{r,eval=FALSE}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-
 BiocManager::install("AnnotationDbi")
 BiocManager::install("Biostrings")
 BiocManager::install("BSgenome")
@@ -60,6 +59,12 @@ BiocManager::install("GenomicRanges")
 BiocManager::install("IRanges")
 BiocManager::install("org.Hs.eg.db")
 BiocManager::install("org.Mm.eg.db")
+BiocManager::install("trackViewer")
+BiocManager::install("rtracklayer")
+BiocManager::install("VariantAnnotation")
+BiocManager::install("Rsamtools")
+BiocManager::install("TxDb.Hsapiens.UCSC.hg38.knownGene")
+BiocManager::install("TxDb.Mmusculus.UCSC.mm10.knownGene")
 install.packages("MARVEL")
 if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
 devtools::install_github("1027victor/ScASplicer")
@@ -82,6 +87,7 @@ conda activate ScASplicer
 + Run the following command in the R console
 ```
 install.packages("MARVEL")
+BiocManager::install("TxDb.Mmusculus.UCSC.mm10.knownGene")
 devtools::install_github("1027victor/ScASplicer")
 ```
 + Then run the following command in the conda environment terminal
@@ -100,11 +106,11 @@ the app with command below, and will be able to invoke the application directly 
 
 Pull the pre-built image from [dockerhub](https://hub.docker.com/), use:
 ```
-docker pull biovictor520zy/scasplicer
+docker pull biovictor520zy/scasplicer:victor
 ```
 Run ScASplicer Docker Container with Port Mapping
 ```
-docker run -itd --name scasplicer -p 10027:10027 biovictor520zy/scasplicer
+docker run -itd --name scasplicer_hpw -p 10027:10027 biovictor520zy/scasplicer:victor
 ```
 The application will be run locally at `http://xxxx.xxxx.xxxx.xxxx:10027`, user could open
 the address with browsers.
