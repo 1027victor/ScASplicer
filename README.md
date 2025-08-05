@@ -17,6 +17,25 @@ If you use `ScASplicer`, please remember to cite its orignal paper:
 
 Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analysis platform for single-cell RNA sequencing data[J]. Nucleic Acids Research, 2023, 51(5): e29-e29.
 
+## 📂 Example Data and Tutorial Videos
+
+To help users get started quickly, we provide one **example dataset** and two **instructional videos**. The example dataset can be used to test and reproduce the analysis workflow, while the videos demonstrate how to operate the tool step by step.
+
+### ▶️ Tutorial Videos
+
+| No. | Title                       | Link                                                                 |
+|-----|-----------------------------|----------------------------------------------------------------------|
+| 1   | MARVEL_pipeline             | [Watch Video](./videos/ScASplicer_01_QuickStart_Tutorial.mp4)       |
+| 2   | Complete_Example_Demo.mp4   | A complete demonstration of the analysis workflow.                  | [Watch Video](./videos/ScASplicer_02_Full_Workflow_Demo.mp4)        |
+
+> 💡 **Tip**: You can open the `.mp4` files directly in your browser or download and play them using any media player.
+
+### 📁 Example Dataset
+
+The `example_data/` folder contains input files required for testing the tool:
+
+
+
 ## Features
 
 ### Overview of splicing events
@@ -36,7 +55,7 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 ![](/inst/app/www/Gene_ontology_analysis.jpg)
 
 
-### Dynamics analysis
+### Dynamic analysis
 
 ![](/inst/app/www/Dynamics_analysis.jpg)
 
