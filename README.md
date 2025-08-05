@@ -21,24 +21,24 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ### Overview of splicing events
 
-![](/inst/app/www/overview_of_splicing_events.jpeg)
+![](/inst/app/www/overview_of_splicing_events.jpg)
 
 ### Modality analysis
 
-![](/inst/app/www/Modality_analysis.jpeg)
+![](/inst/app/www/Modality_analysis.jpg)
 
 ### Differential analysis
 
-![](/inst/app/www/Differential_analysis.jpeg)
+![](/inst/app/www/Differential_analysis.jpg)
 
 ### Gene ontology analysis
 
-![](/inst/app/www/Gene_ontology_analysis.jpeg)
+![](/inst/app/www/Gene_ontology_analysis.jpg)
 
 
 ### Dynamics analysis
 
-![](/inst/app/www/Dynamics_analysis.jpeg)
+![](/inst/app/www/Dynamics_analysis.jpg)
 
 ## Installation
 1. Install the R [(LINK)](https://cran.r-project.org/)
