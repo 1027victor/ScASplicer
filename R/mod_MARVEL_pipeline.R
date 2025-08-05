@@ -81,11 +81,11 @@ mod_MARVEL_pipeline_server <- function(id){
     withProgress(message = 'processing...', value = 0, {
       df.pheno <- read.table(input$file_pheno$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
       sj <- as.data.frame(fread(input$file_sj$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA"))
-      df.feature.se <- read.table(input$file_se$datapath, sep=" ", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
-      df.feature.mxe <- read.table(input$file_mxe$datapath, sep=" ", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
-      df.feature.ri <- read.table(input$file_ri$datapath, sep=" ", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
-      df.feature.a5ss <- read.table(input$file_a5ss$datapath, sep=" ", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
-      df.feature.a3ss <- read.table(input$file_a3ss$datapath, sep=" ", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
+      df.feature.se <- read.table(input$file_se$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
+      df.feature.mxe <- read.table(input$file_mxe$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
+      df.feature.ri <- read.table(input$file_ri$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
+      df.feature.a5ss <- read.table(input$file_a5ss$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
+      df.feature.a3ss <- read.table(input$file_a3ss$datapath, sep="\t", header=TRUE, stringsAsFactors=FALSE, na.strings="NA")
       
       df.feature.list <- list(df.feature.se, df.feature.mxe, df.feature.ri, df.feature.a5ss, df.feature.a3ss)
       names(df.feature.list) <- c("SE", "MXE", "RI", "A5SS", "A3SS")
