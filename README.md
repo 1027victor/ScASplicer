@@ -19,7 +19,7 @@ Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analy
 
 ## 📂 Test Data and Tutorial Videos
 
-To help users get started quickly, we provide one **example dataset** and two **instructional videos**. The example dataset can be used to test and reproduce the analysis workflow, while the videos demonstrate how to operate the tool step by step.
+To help users get started quickly, we provide one **test data** and two **videos**. The example dataset can be used to test and reproduce the analysis workflow, while the videos demonstrate how to operate the tool step by step.
 
 ### ▶️ Tutorial Videos
 
