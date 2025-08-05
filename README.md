@@ -26,13 +26,13 @@ To help users get started quickly, we provide one **example dataset** and two **
 | No. | Title                       | Link                                                                 |
 |-----|-----------------------------|----------------------------------------------------------------------|
 | 1   | MARVEL_pipeline             | [Watch Video](https://drive.google.com/file/d/1gw2FhMuj3E-bgaM4u7vAHVz_rpdxSwPO/view)       |
-| 2   | Complete_Example_Demo.mp4   | [Watch Video] https://drive.usercontent.google.com/download?id=1SId4RsuEmDj_rMtzERodPOIECL5eksD7         |
+| 2   | Complete_Example_Demo.mp4   | [Watch Video] (https://drive.usercontent.google.com/download?id=1SId4RsuEmDj_rMtzERodPOIECL5eksD7)         |
 
 > 💡 **Tip**: You can open the `.mp4` files directly in your browser or download and play them using any media player.
 
 ### 📁 test data
 
-📥 **Download or explore the example dataset**: [test_data](https://drive.usercontent.google.com/download?id=1vdKI2qk54rOTuPBPNv-eVFterGy4P2DL)
+📥 **Download test data**: [test_data](https://drive.usercontent.google.com/download?id=1vdKI2qk54rOTuPBPNv-eVFterGy4P2DL)
 
 
 
