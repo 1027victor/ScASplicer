@@ -107,6 +107,7 @@ conda activate ScASplicer
 + Run the following command in the R console
 ```
 install.packages("MARVEL")
+install.packages('BiocManager')
 BiocManager::install("TxDb.Mmusculus.UCSC.mm10.knownGene")
 devtools::install_github("1027victor/ScASplicer")
 ```
