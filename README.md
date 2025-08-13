@@ -85,7 +85,6 @@ BiocManager::install("VariantAnnotation")
 BiocManager::install("Rsamtools")
 BiocManager::install("TxDb.Hsapiens.UCSC.hg38.knownGene")
 BiocManager::install("TxDb.Mmusculus.UCSC.mm10.knownGene")
-install.packages("MARVEL")
 if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
 devtools::install_github("1027victor/ScASplicer")
 ```
