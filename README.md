@@ -13,7 +13,7 @@
 
 ![](/inst/app/www/pipeline.jpg)
 
-If you want to use this tool in your research, please remember to cite its orignal paper and our paper,the detailed introduction and application of the algorithm can also be found in the paper: 
+If you want to use this tool in your research, please remember to cite its orignal paper and our paper,the detailed introduction and application of the tool can also be found in the paper: 
 <strong><em>ScASplicer: An interactive shiny/R application for alternative splicing analysis of single-cell sequencing</em></strong> (https://doi.org/10.1016/j.ygeno.2025.111116).
 
 Wen W X, Mead A J, Thongjuea S. MARVEL: an integrated alternative splicing analysis platform for single-cell RNA sequencing data[J]. Nucleic Acids Research, 2023, 51(5): e29-e29.
